@@ -1,0 +1,214 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+/* ABOUT CONTAINER PAGE  */
+.about-Container{
+        width: 100vw;
+}
+.imageBackground{
+        height: 270px;
+        position: relative;
+        font-size: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.imageBackground::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left:0px;
+        background: linear-gradient(rgba(52, 6, 93, 0.5),rgba(52, 6, 93, 0.5)), url('./img/overlay.jpg');
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+}
+.AboutItems{
+        position: relative;
+        top: -100px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+}
+.stats {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .stat-item {
+        text-align: center;
+        flex: 1;
+      }
+      .stat-item i {
+        font-size: 40px;
+        color: #f8b133; 
+      }
+      .stat-item h3 {
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      .stat-item p {
+        color: #666;
+        margin: 0;
+      }
+      @media screen and (max-width:700px){
+        .AboutItems{
+                width:95%;
+        }
+}
+
+
+
+/* BUSSINESS SOLUTION PAGE  */
+      .bussiness-solutions{
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+      }
+      .cta-section {
+        background-image: linear-gradient(rgba(58, 3, 106, 0.5),rgba(62, 0, 117, 0.5)), url('./img/aboutBackground.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 60px 20px;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+
+      .cta-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+      }
+      .cta-heading {
+        width: 50%;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .cta-form {
+              width: 50%;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .cta-input {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid white;
+        border-radius: 25px;
+        width: 50%;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        font-weight:bolder;
+      }
+      .cta-input::placeholder{
+        color: white;
+      }
+      .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        background-color: #f8b133;
+        color: white;
+        cursor: pointer;
+        width:fit-content;
+        transition: background-color 0.3s;
+      }
+      .cta-button:hover {
+        background-color: #e09e2a;
+      }
+      @media screen and (max-width:837px){
+        .cta-content {
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                width: 70%;
+        }
+              .cta-heading {
+                width: 100%;
+              }
+              .cta-form {
+                width: 100%;
+        }
+}
+
+/* LOGIN PAGE  */
+.login-container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        max-width: 100%;
+      }
+      .login-container h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      .login-container a {
+        text-decoration: none;
+        color: #007bff;
+        float: right;
+        margin-top: -28px;
+      }
+      .login-container input[type="email"], 
+      .login-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .login-container input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .login-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .login-container .social-login {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .login-container .remember{
+        display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+      }
+      .loginWith .loginWith-header{
+        padding:0px 8px;width:fit-content;margin-left:auto; margin-right: auto; position: relative; top:-25px; background-color:white;
+      }
+      .login-container .social-login a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+      }
+      .login-container .social-login a i {
+        margin-right: 5px;
+      }
